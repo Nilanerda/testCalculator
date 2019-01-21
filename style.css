@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    width: 500px;
+    margin: 50px auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    grid-gap: 3px;
+    background-color: #6d6d6d;
+    border: 3px solid #6d6d6d;
+}
+
+input {
+    outline: none;
+}
+
+.textview-input {
+    grid-column: 1 / 5;
+    grid-row: 1;
+}
+
+.textview-form {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.textview-form > input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: right;
+    font-size: 40px;
+    color: #ffc314;
+    background: #6d6d6d;
+    padding: 0 20px;
+}
+
+::placeholder {
+    color: #ffc314;
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background: #ffffff;
+    font-size: 40px;
+}
+
+.clear-arrow {
+    color: #ffc314;
+}
+
+input[type="button"].equal {
+    background-color: #ffc314;
+    color: #ffffff;
+}
